@@ -15,11 +15,7 @@ export const useGetCallById = (id: string | string[]) =>
                 const { calls } = await client.queryCalls({
 
                     filter_conditions: {
-                        id: {
-                            /* this code be a error check later */
-                            /* remove it as a property leave as variable if so */
-                            eq: id
-                        }
+                        id
                     }
                 })
 
